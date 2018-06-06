@@ -165,7 +165,18 @@ tr {
 }
 
 .navbar-default .navbar-nav > li > a { color: white; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {    color: white;    text-transform: uppercase;    font-weight: bolder;}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {    color: white;    text-transform: uppercase;    font-weight: bolder;}
 .navbar-default .navbar-brand {color: white; }
-body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 13px; line-height: 1.42857143; color: black; background-color: #3f00ff;}
+.navbar-default .navbar-nav > a
+body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 13px; line-height: 1.42857143; color: black;}
 .navbar-default { background-color: #3f00ff; }
+
+a {
+  color: #3f00ff;
+}
+a:hover {
+  color: #1f00af;
+}
