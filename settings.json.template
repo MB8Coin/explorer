@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "MB8Coin",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "MB8Coin",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "MB8",
 
   // logo
   "logo": "/images/logo.png",
@@ -26,7 +26,7 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Simplex",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 38381,
+    "user": "vidaru",
+    "pass": "my-secret-pass"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 50,
 
   // language settings
   "locale": "locale/en.json",
@@ -74,7 +74,7 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
+    "difficulty": "POS",
     "last_txs": 100
   },
 
@@ -115,13 +115,13 @@
   },
 
   // twitter, facebook, googleplus
-  "twitter": "iquidus",
+  "twitter": "mb8coin",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "226916092368fd781ed89524a0bd9f6be86d7b043ff44f08c6e0936c79ade33d",
+  "genesis_block": "0000fa3dbbe6d00b4a921c2e44b2a9234bf6239d5004f80e94798adb159ea598",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -130,7 +130,7 @@
   "txcount": 100,
 
   //show total sent & received on address page (set false if PoS)
-  "show_sent_received": true,
+  "show_sent_received": false,
 
   // how to calculate current coin supply
   // COINBASE : total sent from coinbase (PoW)
@@ -138,7 +138,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "BALANCES",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s

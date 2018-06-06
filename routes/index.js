@@ -46,6 +46,7 @@ function route_get_tx(res, txid) {
         });
       }
       else {
+	console.log("Or we are here")
         lib.get_rawtransaction(txid, function(rtx) {
           if (rtx.txid) {
             lib.prepare_vin(rtx, function(vin) {
